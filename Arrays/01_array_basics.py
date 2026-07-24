@@ -6,7 +6,7 @@ print("="*50)
 nums = [10,20,30,40,50]
 
 for num in nums:
-    print("Travering an array:",num)    #"Give me each value directly."
+    print(num)                           #"Give me each value directly."
 
 for i in range(len(nums)):
     print(nums[i])                       #"Give me each index."
@@ -52,7 +52,7 @@ for num in nums:
         smallest = num
 print(smallest)
 print("="*50)
-print("="*50)
+
 
 # COUNT REPEATED NUM IN ARRAY
 nums = [10, 20, 10, 30, 20, 10, 40]
@@ -62,3 +62,45 @@ for num in nums:
     if num == 10:
         count = count + 1
 print(count)
+print("="*50)
+
+#Frequency Counting
+nums = [10, 20, 10, 30, 20, 10, 40]
+frequency = {}
+for num in nums:
+   if num in frequency:
+       frequency[num] += 1
+   else:
+       frequency[num] = 1
+print(frequency)
+print("="*50)
+print("="*50)
+
+#SORTING
+#sort()
+nums = [5, 2, 8, 1, 3]
+nums.sort()               #Ascending
+print(nums)
+nums.sort(reverse=True)   #Descending
+print(nums)  
+print("="*50) 
+#sorted()
+nums = [5, 2, 8, 1, 3]
+new_nums = sorted(nums)
+print(new_nums)
+print(nums)
+print("="*50) 
+
+#Practice 1
+nums = [45, 12, 89, 3, 67, 21]
+nums.sort()
+print(nums)
+print("="*50) 
+
+#Practice 2
+nums = [45, 12, 89, 3, 67, 21]
+nums.sort(reverse = True)
+print(nums)
+print("="*50) 
+
+#TIME COMPLEXITY
