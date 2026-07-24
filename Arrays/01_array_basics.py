@@ -104,3 +104,16 @@ print(nums)
 print("="*50) 
 
 #TIME COMPLEXITY
+
+
+#SECOND LARGEST
+nums = [12, 45, 7, 89, 23, 56]
+largest = nums[0]
+second_largest = nums[0]
+for num in nums:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest:
+        second_largest = num
+print(second_largest)
