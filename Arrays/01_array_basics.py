@@ -117,3 +117,19 @@ for num in nums:
     elif num > second_largest:
         second_largest = num
 print(second_largest)
+print("="*50) 
+
+#MISSING NUMBER
+nums = [1,2,3,5]
+n = len(nums) + 1
+expected_sum = 0
+for i in range(1, n+1):
+   expected_sum = expected_sum + i
+
+
+actual_sum = 0
+for num in nums:
+    actual_sum = actual_sum + num
+
+missing = expected_sum - actual_sum
+print(missing)
