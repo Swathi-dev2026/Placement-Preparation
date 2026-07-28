@@ -16,3 +16,8 @@ for i in range(2 , len(nums)):
     if window_sum > max_sum:
         max_sum = window_sum
 print(max_sum)  
+
+#Fixed size sliding window
+nums = [2, 9, 9, 8, 5, 7]
+k = 3
+window_sum = 0
