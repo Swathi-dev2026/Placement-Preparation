@@ -136,16 +136,4 @@ print(missing)
 print("="*50) 
 print("="*50) 
 
-#SLIDING WINDOW 
-print ("sliding window")
-nums = [2, 4, 6, 8]
-window_sum = nums[0] + nums[1]
-window_sum = window_sum - nums[0] + nums[2]
-window_sum = window_sum - nums[1] + nums[3]
-print(window_sum)
-print("Loop version: ")
-nums = [2, 4, 6, 8]
-window_sum = nums[0] + nums[1]
 
-for i in range(2 , len(nums)):
-    
